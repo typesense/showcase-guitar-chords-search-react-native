@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f3294b7a-f02c-4a46-8c39-f9f3bfa84fa7"
+      }
+    },
+    "owner": "phihero"
   }
 }
