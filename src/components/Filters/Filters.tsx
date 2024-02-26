@@ -19,6 +19,8 @@ const VirtualRefinementList = ({ attribute }) => {
 export default function Filters({ isModalOpen, onToggleModal, onChange }) {
   return (
     <>
+      {/* Workaround since refinement list states are lost when we close the modal */}
+      {/* https://github.com/algolia/react-instantsearch/issues/2989 */}
       <VirtualRefinementList attribute='key' />
       <VirtualRefinementList attribute='suffix' />
       <VirtualRefinementList attribute='positions.capo' />
