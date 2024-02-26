@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "ts:check": "tsc"
+    "ts:check": "tsc",
+    "start:typesense": "docker compose up",
+    "index:typesense": "npx tsx ./scripts/indexTypesense.ts"
   },
   "dependencies": {
     "@tombatossals/react-chords": "^0.2.10",
@@ -24,7 +26,8 @@
     "typesense-instantsearch-adapter": "^2.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "dotenv": "^16.4.5"
   },
   "private": true
 }
