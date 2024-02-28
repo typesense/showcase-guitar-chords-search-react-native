@@ -1,11 +1,8 @@
 import TypesenseInstantSearchAdapter from 'typesense-instantsearch-adapter';
 import Constants from 'expo-constants';
 
-const {
-  expoConfig: { hostUri },
-} = Constants;
-
-const localhost = hostUri.split(`:`).shift();
+const localhost =
+  Constants.expoConfig.hostUri?.split(`:`).shift() || 'localhost';
 
 export const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
