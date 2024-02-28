@@ -1,7 +1,6 @@
-import { Button, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Button from '../Button';
 import { useClearRefinements } from 'react-instantsearch-core';
-
-import STYLE_VARIABLES from '@/utils/STYLE_VARIABLES';
 
 export default function FilterListButton({ onChange, onToggleModal }) {
   const { canRefine: canClear, refine: clear } = useClearRefinements();
@@ -11,7 +10,6 @@ export default function FilterListButton({ onChange, onToggleModal }) {
       <View style={s.filterListButton}>
         <Button
           title='Clear all'
-          color={STYLE_VARIABLES.__btnBg}
           disabled={!canClear}
           onPress={() => {
             clear();
@@ -21,7 +19,7 @@ export default function FilterListButton({ onChange, onToggleModal }) {
         />
       </View>
       <View style={s.filterListButton}>
-        <Button onPress={onToggleModal} title='See results' color='#252b33' />
+        <Button onPress={onToggleModal} title='See results' />
       </View>
     </View>
   );

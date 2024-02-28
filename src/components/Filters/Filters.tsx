@@ -4,6 +4,7 @@ import {
   Modal,
   Text,
   ScrollView,
+  View,
 } from 'react-native';
 import { useRefinementList } from 'react-instantsearch-core';
 import FacetList from '../Facet';
@@ -28,24 +29,30 @@ export default function Filters({ isModalOpen, onToggleModal, onChange }) {
 
       <Modal animationType='slide' visible={isModalOpen}>
         <ScrollView>
-          <SafeAreaView style={s.Filters}>
-            <Text style={s.h2}>Key</Text>
-            <FacetList attribute='key' sortBy={['name']} onChange={onChange} />
-            <Text style={s.h2}>Suffix</Text>
-            <FacetList
-              attribute='suffix'
-              limit={8}
-              showMore
-              showMoreLimit={100}
-              onChange={onChange}
-              searchable
-            />
-            <Text style={s.h2}>Capo</Text>
-            <FacetList attribute='positions.capo' onChange={onChange} />
-            <FilterListButton
-              onChange={onChange}
-              onToggleModal={onToggleModal}
-            />
+          <SafeAreaView>
+            <View style={s.Filters}>
+              <Text style={s.h2}>Key</Text>
+              <FacetList
+                attribute='key'
+                sortBy={['name']}
+                onChange={onChange}
+              />
+              <Text style={s.h2}>Suffix</Text>
+              <FacetList
+                attribute='suffix'
+                limit={8}
+                showMore
+                showMoreLimit={100}
+                onChange={onChange}
+                searchable
+              />
+              <Text style={s.h2}>Capo</Text>
+              <FacetList attribute='positions.capo' onChange={onChange} />
+              <FilterListButton
+                onChange={onChange}
+                onToggleModal={onToggleModal}
+              />
+            </View>
           </SafeAreaView>
         </ScrollView>
       </Modal>

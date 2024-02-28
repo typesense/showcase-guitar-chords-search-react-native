@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, View, FlatList, Button } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
+import Button from './Button';
 import { useInfiniteHits } from 'react-instantsearch-core';
-import STYLE_VARIABLES from '@/utils/STYLE_VARIABLES';
 
 export function InfiniteHits({ hitComponent: Hit, ...props }) {
   const { hits, isLastPage, showMore } = useInfiniteHits({
@@ -24,11 +24,9 @@ export function InfiniteHits({ hitComponent: Hit, ...props }) {
         )}
       />
       {!isLastPage && hits.length !== 0 && (
-        <Button
-          onPress={() => showMore()}
-          title='Show more'
-          color={STYLE_VARIABLES.__btnBg}
-        />
+        <>
+          <Button onPress={() => showMore()} title='Show more' />
+        </>
       )}
     </>
   );

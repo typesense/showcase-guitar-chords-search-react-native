@@ -3,9 +3,9 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Button,
   TextInput,
 } from 'react-native';
+import Button from './Button';
 import {
   useRefinementList,
   UseRefinementListProps,
@@ -70,7 +70,6 @@ export default function FacetList({
           <Button
             onPress={toggleShowMore}
             title={isShowingMore ? 'Show less' : 'Show more'}
-            color={STYLE_VARIABLES.__btnBg}
           />
         </View>
       )}
@@ -85,6 +84,7 @@ const s = StyleSheet.create({
     marginBottom: 20,
     paddingVertical: 4,
     paddingHorizontal: 10,
+    minHeight: 38,
   },
   title: {
     alignItems: 'center',
