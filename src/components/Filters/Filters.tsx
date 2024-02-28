@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native';
 import { useRefinementList } from 'react-instantsearch-core';
-import FacetList from '../Facet';
+import RefinementList from './RefinementList';
 
 import ToggleFiltersButton from './ToggleFiltersButton';
 import FilterListButton from './FilterListButton';
@@ -32,13 +32,13 @@ export default function Filters({ isModalOpen, onToggleModal, onChange }) {
           <SafeAreaView>
             <View style={s.Filters}>
               <Text style={s.h2}>Key</Text>
-              <FacetList
+              <RefinementList
                 attribute='key'
                 sortBy={['name']}
                 onChange={onChange}
               />
               <Text style={s.h2}>Suffix</Text>
-              <FacetList
+              <RefinementList
                 attribute='suffix'
                 limit={8}
                 showMore
@@ -47,7 +47,7 @@ export default function Filters({ isModalOpen, onToggleModal, onChange }) {
                 searchable
               />
               <Text style={s.h2}>Capo</Text>
-              <FacetList attribute='positions.capo' onChange={onChange} />
+              <RefinementList attribute='positions.capo' onChange={onChange} />
               <FilterListButton
                 onChange={onChange}
                 onToggleModal={onToggleModal}

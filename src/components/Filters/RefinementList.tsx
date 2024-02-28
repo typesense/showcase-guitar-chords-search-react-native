@@ -5,7 +5,7 @@ import {
   View,
   TextInput,
 } from 'react-native';
-import Button from './Button';
+import Button from '../Button';
 import {
   useRefinementList,
   UseRefinementListProps,
