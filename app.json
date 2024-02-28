@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "showcase-guitar-chords-search-expo-react-native",
+    "name": "Guitar chords search",
     "slug": "showcase-guitar-chords-search-expo-react-native",
+    "description": "A demo that shows how to implement Typesense in an Expo app",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,17 +13,17 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.phihero.showcaseguitarchordssearchexporeactnative"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.phihero.showcaseguitarchordssearchexporeactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -31,6 +33,12 @@
         "projectId": "f3294b7a-f02c-4a46-8c39-f9f3bfa84fa7"
       }
     },
-    "owner": "phihero"
+    "owner": "phihero",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f3294b7a-f02c-4a46-8c39-f9f3bfa84fa7"
+    }
   }
 }
