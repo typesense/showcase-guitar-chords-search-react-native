@@ -6,10 +6,10 @@
     "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/typesense_logo.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/typesense_loading.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,13 +20,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/typesense_logo.jpg",
         "backgroundColor": "#ffffff"
       },
       "package": "com.phihero.showcaseguitarchordssearchexporeactnative"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/typesense_logo.jpg"
     },
     "extra": {
       "eas": {
