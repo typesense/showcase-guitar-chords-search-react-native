@@ -25,7 +25,7 @@ const s = StyleSheet.create({
     zIndex: 100,
   },
   icon: {
-    width: 31,
+    width: 30,
     aspectRatio: 1 / 1,
   },
 });
