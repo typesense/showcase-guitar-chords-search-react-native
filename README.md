@@ -1,5 +1,5 @@
 <h1 align="center">
- 🎸 Instant Guitar Chord Positions Search, powered by Typesense - Sveltekit
+ 🎸 Instant Guitar Chord Positions Search, powered by Typesense - React Native
 </h1>
 <div align="center">
   <div><h3>Other versions</h3></div>
