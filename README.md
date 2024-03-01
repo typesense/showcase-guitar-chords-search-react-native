@@ -36,11 +36,11 @@ The guitar chord dataset & chord svg generation is from <a href="https://github.
 │   │   └── schema.json
 │   └── indexTypesense.ts # script that index data from guitar.json into typesense server
 ├── src/
-│    ├── components/
-│    │   └── UI components...
-│    └── utils/
-│        ├── reactChords.ts # draw guitar chord svg
-│        └── typesense.ts # typesense-instantsearch-adapter config
+│   ├── components/
+│   │   └── UI components...
+│   └── utils/
+│       ├── reactChords.ts # draw guitar chord svg
+│       └── typesense.ts # typesense-instantsearch-adapter config
 └── App.tsx # guitar chords search
 ```
 
