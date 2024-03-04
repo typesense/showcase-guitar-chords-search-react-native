@@ -17,7 +17,7 @@ type _props = {
   searchable?: boolean;
 };
 
-export default function FacetList({
+export default function RefinementList({
   onChange,
   searchable = false,
   ...props
